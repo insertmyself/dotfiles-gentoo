@@ -121,7 +121,8 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --info="right"  --preview "bat --style=numbers --color=always {} | head -500"'
 export EZA_COLORS="di=01;31"
 
-# Enable zoxide
+# Enable programs feature
+export GPG_TTY="$(tty)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Some aliases
@@ -134,3 +135,5 @@ alias pase="paru -Ss"
 
 # Keymaps for deleting an entire word
 bindkey "^H" backward-kill-word
+
+export PATH=$PATH:/home/wetar/.spicetify
