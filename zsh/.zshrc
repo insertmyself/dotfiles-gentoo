@@ -124,6 +124,7 @@ export EZA_COLORS="di=01;31"
 # Enable programs feature
 export GPG_TTY="$(tty)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(keychain --eval --quiet id_ed25519)"
 
 # Some aliases
 alias delcache="sudo emerge --ask --deep --depclean --verbose && sudo eclean-dist -D && sudo eclean-pkg -D && rm -rf $HOME/.local/share/zoxide && npm cache clean --force && rm -rf $HOME/{.pki,.npm,.npmrc,.yarn,.yarnrc,.bun} && rm -rf $HOME/.cache/{paru,swifty,swww} && echo 'Cache successfully cleaned'"
@@ -137,3 +138,6 @@ alias pase="paru -Ss"
 bindkey "^H" backward-kill-word
 
 export PATH=$PATH:/home/wetar/.spicetify
+
+# bun completions
+[ -s "/home/wetar/.bun/_bun" ] && source "/home/wetar/.bun/_bun"
