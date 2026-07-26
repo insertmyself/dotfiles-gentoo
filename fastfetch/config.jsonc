@@ -1,0 +1,107 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "$HOME/.config/fastfetch/Red.png",
+        "type": "kitty-direct",
+        "height": 20,
+        "width": 45,
+        "padding": {
+            "top": 1,
+            "left": 2,
+            "right": 5,
+            "bottom": 3
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;207;195;141m───────────────────System───────────────────\u001b[0m"
+        },
+        "break",
+        {
+            "type": "host",
+            "key": "   PC",
+            "format": "\u001b[38;2;207;195;141m{name}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "display",
+            "key": "  󰍹 Monitor",
+            "format": "\u001b[38;2;207;195;141m{1}x{2} ({3}hz)\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "cpu",
+            "key": "   CPU",
+            "format": "\u001b[38;2;207;195;141m{name}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "gpu",
+            "key": "   GPU",
+            "format": "\u001b[38;2;207;195;141m{name}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "memory",
+            "key": "   Memory",
+            "format": "\u001b[38;2;207;195;141m{1} / {2}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "disk",
+            "key": "   Disk",
+            "format": "\u001b[38;2;207;195;141m{1} / {2}\u001b[0m",
+            "keyColor": "red"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;207;195;141m────────────────────User────────────────────\u001b[0m"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "   Distro",
+            "format": "\u001b[38;2;207;195;141m{name}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "users",
+            "key": "   User",
+            "format": "\u001b[38;2;207;195;141m{1}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "wm",
+            "key": "   Compositor",
+            "format": "\u001b[38;2;207;195;141m{1}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "wm",
+            "key": "   DS",
+            "format": "\u001b[38;2;207;195;141m{3}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "terminal",
+            "key": "   Terminal",
+            "format": "\u001b[38;2;207;195;141m{1}\u001b[0m",
+            "keyColor": "red"
+        },
+        {
+            "type": "shell",
+            "key": "   Shell",
+            "format": "\u001b[38;2;207;195;141m{1}\u001b[0m",
+            "keyColor": "red",
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "square",
+            "paddingLeft": 13
+        }
+    ]
+}

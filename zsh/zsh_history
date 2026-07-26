@@ -1,0 +1,512 @@
+: 1784199940:0;sudo emerge -av zsh-syntax-highlighting zsh-autosuggestions
+: 1784199993:0;sudo emerge -av zsh-syntax-highlighting
+: 1784200053:0;ls /usr/share/zsh/
+: 1784200056:0;ls /usr/share/zsh/site-functions/
+: 1784200074:0;sudo emerge -av neovim
+: 1784200653:0;sudo emerge -av nodejs
+: 1784200813:0;cp -r Downloads/dotfiles/nvim .config/
+: 1784201304:0;mkdir JetBrainsMono
+: 1784201308:0;mv JetBrainsMono.zip JetBrainsMono
+: 1784201309:0;cd JetBrainsMono
+: 1784201311:0;unzip JetBrainsMono.zip
+: 1784201318:0;rm JetBrainsMono.zip
+: 1784201319:0;l;s
+: 1784201330:0;mv JetBrainsMono JetBrainsMonoNerdFont
+: 1784201335:0;mkdir .local/share/fonts
+: 1784201339:0;mv Downloads/JetBrainsMonoNerdFont .local/share/fonts
+: 1784201388:0;sudo emerge -av zsh-autosuggestions
+: 1784201465:0;sudo eselect repository enable guru
+: 1784201472:0;sudo emerge --sync guru
+: 1784201490:0;sudo emerge -av app-shells/zsh-autosuggestions
+: 1784201517:0;mkdir .config/zsh/plugins
+: 1784201525:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/plugins/zsh-autosuggestions
+: 1784201555:0;]clear
+: 1784201619:0;git clone https://github.com/ikhomutov/zsh-auto-venv ~/.config/zsh/plugins/zsh-auto-venv
+: 1784201707:0;sudo emerge --ask --deep --update --sync @world
+: 1784201716:0;sudo emerge --ask --deep --update @world
+: 1784206016:0;lsw
+: 1784206024:0;chmod +x install.sh
+: 1784206027:0;./install.sh --help
+: 1784206079:0;mkdir ../.local/share/themes
+: 1784206084:0;./install.sh --dir
+: 1784206087:0;./install.sh --help | less
+: 1784206092:0;./install.sh --dest
+: 1784213258:0;rm .zsh_history .viminfo
+: 1784213263:0;rm -rf .npm
+: 1784213289:0;sudo emerge -av sassc
+: 1784213313:0;sudo emerge -av dev-lang/sassc
+: 1784213505:0;./install.sh --dest ../.local/share/themes --color dark
+: 1784213517:0;rm -rf .local/share/themes/*
+: 1784213538:0;rm install.sh
+: 1784213540:0;git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
+: 1784213623:0;cd Graphite-gtk-theme
+: 1784213645:0;rm -rf *y
+: 1784213647:0;rm -rf *
+: 1784213652:0;cd Downloads/Graphite-gtk-theme
+: 1784213653:0;./install.sh --dest $HOME/.local/share/themes --color dark
+: 1784213658:0;cd .local/share/themes
+: 1784213668:0;sudo emerge -av lxappearance
+: 1784213759:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/nwg-look
+: 1784213766:0;sudo emerge -av nwg-look
+: 1784214545:0;mkdir .config/gtk-2.0
+: 1784214603:0;cd .config/gtk-2.0
+: 1784214623:0;cd /etc/portage
+: 1784214625:0;cd package.use
+: 1784214630:0;cd ../package.accept_keywords
+: 1784214646:0;EDITOR=nvim sudoedit scenefx
+: 1784214656:0;EDITOR=nvim sudoedit mangowm
+: 1784214662:0;sudo rm -rf scenefx
+: 1784214729:0;sudo emerge -av swww quickshell
+: 1784214750:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/awww
+: 1784214922:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/quickshell
+: 1784215442:0;sudo rm -rf /etc/portage/package.use/quickshell
+: 1784215605:0;EDITOR=nvim sudoedit /etc/portage/package.use/qtbase
+: 1784215739:0;EDITOR=nvim sudoedit /etc/portage/package.use/qtdeclarative
+: 1784215855:0;sudo rm -rf /etc/portage/package.use/qtbase
+: 1784215856:0;sudo rm -rf /etc/portage/package.use/qtdeclarative
+: 1784216116:0;sudo emerge -av wl-clipboard
+: 1784216175:0;EDITOR=nvim sudoedit /etc/portage/package.use/kitty
+: 1784216188:0;EDITOR=nvim sudoedit /etc/portage/package.use/rofi
+: 1784216214:0;EDITOR=nvim sudoedit /etc/portage/package.use/firefox
+: 1784216233:0;EDITOR=nvim sudoedit /etc/portage/package.use/networkmanager
+: 1784216267:0;sudo equery uses quickshell
+: 1784216306:0;EDITOR=nvim sudoedit /etc/portage/package.use/quickshell
+: 1784216949:0;sudo emerge -av awww quickshell
+: 1784217004:0;sudo emerge -av quickshell
+: 1784224451:0;sudo equery which gui-apps/awwww
+: 1784224453:0;sudo equery which gui-apps/awww
+: 1784224465:0;cd /var/db/repos/guru/gui-apps/awww/
+: 1784224488:0;sudo ebuild awww-0.12.1.ebuild manifest
+: 1784224519:0;sudo ebuild awww-0.12.1.ebuild manifest --force
+: 1784224527:0;sudo emerge -av awww
+: 1784224732:0;EDITOR=nvim sudoedit /etc/portage/package.use/imagemagick
+: 1784224765:0;sudo equery uses imagemagick
+: 1784224774:0;sudo emerge -av imagemagick
+: 1784226278:0;magick Red.jpg Red.pnh
+: 1784226281:0;rm Red.pnh
+: 1784226284:0;magick Red.jpg Red.png
+: 1784226286:0;rm Red.jpg
+: 1784226294:0;awww
+: 1784226484:0;awww img Pictures/Wallpapers/Red.png
+: 1784226810:0;nvim niri/config.kdl
+: 1784226955:0;sudo emerge --ask --verbose --depclean --deep
+: 1784226970:0;sudo eclean-dist -d
+: 1784227046:0;mkdir Pictures/Screenshots
+: 1784227091:0;mkdir capitaine-cursors
+: 1784227096:0;mv capitaine-cursors-r4.tar.gz capitaine-cursors
+: 1784227097:0;cd capitaine-cursors
+: 1784227101:0;tar xvf capitaine-cursors-r4.tar.gz
+: 1784227111:0;sudo mv capitaine-cursors /usr/share/icons
+: 1784227113:0;rm capitaine-cursors-r4.tar.gz
+: 1784227117:0;rm -rf capitaine-cursors
+: 1784227299:0;mkdir .local/share/icons
+: 1784227301:0;nwg-look
+: 1784227346:0;rm .gtkrc-2.0
+: 1784227383:0;nvim .local/share/icons/default/index.theme
+: 1784227509:0;awww img --transition-fps 60 --transition-pos grow --transition-angle wipe --transition-duration 500 Pictures/Wallpapers/Red.png
+: 1784227518:0;awww img --transition-fps 60 --transition-pos center --transition-angle wipe --transition-duration 500 Pictures/Wallpapers/Red.png
+: 1784227524:0;awww img --transition-fps 60 --transition-pos center --transition-duration 500 Pictures/Wallpapers/Red.png
+: 1784227549:0;awww img --transition-fps 60 --transition-pos center --transition-duration 500 --transition-type grow Pictures/Wallpapers/Red.png
+: 1784227576:0;cd .local/share/bin
+: 1784227581:0;./switar
+: 1784227592:0;cd ../../niri/scripts
+: 1784227595:0;./wallpaper.sh
+: 1784227703:0;awww restore
+: 1784227758:0;awww img Pictures/Wallpapers/Red.png --transition-fps 60 --transition-type grow --transition-pos center --transition-duration 1
+: 1784227895:0;awww query
+: 1784227898:0;awww query image
+: 1784227903:0;awww query --json
+: 1784227913:0;awww query --namespac
+: 1784227916:0;awww query --namespace=
+: 1784227918:0;awww query --namespace
+: 1784227928:0;awww query --help
+: 1784227996:0;cp -r Downloads/dotfiles/rofi .config
+: 1784228262:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/rofi
+: 1784228276:0;sudo emerge -av gui-apps/rofi-emoji
+: 1784228372:0;sudo equery depends app-misc/rofi-emoji
+: 1784228378:0;sudo equery depends rofi-emoji
+: 1784228396:0;sudo equery depends x11-misc/rofi-emoji
+: 1784228408:0;sudo emerge -pv app-misc/rofi-emoji
+: 1784228415:0;sudo emerge -pv x11-misc/rofi-emoji
+: 1784228451:0;sudo emerge -s rofi
+: 1784228458:0;sudo emerge -s x11-misc/rofi
+: 1784228524:0;sudo emerge --unmerge x11-misc/rofi
+: 1784228701:0;sudo rm -rf /etc/portage/package.use/rofi
+: 1784228704:0;sudo rm -rf /etc/portage/package.accept_keywords/rofi
+: 1784228735:0;sudo equery rofi-wayland
+: 1784228745:0;sudo equery uses rofi
+: 1784228801:0;sudo emerge -av rofi-emoji
+: 1784228892:0;sudo equery uses rofi-wayland
+: 1784228915:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/rofi-wayland
+: 1784228927:0;sudo emerge -av rofi-wayland
+: 1784229093:0;rofi -run
+: 1784229096:0;rofi -show
+: 1784229100:0;rofi --help
+: 1784229284:0;mkdir .config/mango/scripts
+: 1784229286:0;cd .config/mango/scripts
+: 1784229290:0;nvim wallpaper.sh
+: 1784229373:0;chmod +x wallpaper.sh
+: 1784229478:0;nvim config.conf
+: 1784229526:0;awww clear-cache
+: 1784229566:0;kitty | wl-copy
+: 1784229684:0;sudo rc-update show dbus
+: 1784229711:0;qlist -I | grep elogind
+: 1784229714:0;sudo qlist -I | grep elogind
+: 1784229756:0;sudo rc-update add elogind boot
+: 1784229760:0;sudo rc-update add elogind start
+: 1784229784:0;sudo rc-update add dbus default
+: 1784229790:0;sudo rc-service dbus start
+: 1784229870:0;sudo rc-service elogind
+: 1784229914:0;sudo rc-service elogind status
+: 1784229925:0;loginctl 2>&1 | head -5
+: 1784229974:0;sudo equery uses kitty
+: 1784230014:0;sudo qlist -Iv glfw
+: 1784230020:0;sudo equery uses glfw
+: 1784230044:0;sudo equery belongs libsystemd.so.0
+: 1784230152:0;sudo emerge -av dbus elogind
+: 1784230163:0;sudo emerge -av sys-apps/dbus elogind
+: 1784230201:0;ls /usr/share/wayland-sessions
+: 1784230562:0;which kitty
+: 1784230569:0;ldd /usr/bin/kitty
+: 1784230607:0;sudo equery d kitty
+: 1784230622:0;sudo qlist -Iv | grep "glfw:
+: 1784230623:0;sudo qlist -Iv | grep "glfw"
+: 1784230630:0;sudo qlist -Iv | grep "glfw|libdecor|wlroots"
+: 1784230678:0;sudo find / -name "libelogind.so*" 2>/dev/null
+: 1784230692:0;sudo find / -name "libsystemd.so*" 2>/dev/null
+: 1784230736:0;sudo ln -s /usr/lib64/libelogind.so.0 /usr/lib64/libsystemd.so.0
+: 1784230738:0;ldconfig
+: 1784230802:0;sudo rm /usr/lib64/libsystemd.so.0
+: 1784230804:0;sudo ldconfig
+: 1784230873:0;sudo rc-service dbus status
+: 1784230896:0;sudo dbus-send --system --print-reply --dest=org.freedesktop.DBus / org.freedesktop.DBus.ListNames
+: 1784231084:0;sudo chmod +x /usr/local/bin/mango-session
+: 1784231085:0;ls -l /usr/local/bin/mango-session
+: 1784231150:0;sudo dbus-launch --sh-syntax --exit-with-session
+: 1784231166:0;EDITOR=nvim sudoedit /usr/local/bin/mango-session
+: 1784231215:0;echo $DBUS_SESSION_BUS_ADDRESS
+: 1784231304:0;sudo emerge -av xdg-desktop-portal xdg-desktop-portal-wlr
+: 1784231525:0;sudo emerge -av mako
+: 1784231533:0;sudo emerge -av gui-apps/mako
+: 1784231641:0;sudo emerge -av xdg-desktop-portal-gtk
+: 1784231712:0;mkdir .config/xdg-desktop-portal
+: 1784231721:0;nvim .config/xdg-desktop-portal/portals.conf
+: 1784232021:0;rm -rf .config/xdg-desktop-portal
+: 1784232094:0;cd .config
+: 1784232102:0;rm -rf go
+: 1784232170:0;mv .gtkrc-2.0 .config/gtk-2.0/gtkrc-2.0
+: 1784232258:0;EDITOR=nvim sudoedit /usr/share/wayland-sessions/mango.desktop
+: 1784232279:0;sudo rm -rf /usr/local/bin/mango-session
+: 1784232289:0;sudo emerge --unmerge xdg-desktop-portal-gtk
+: 1784232350:0;kitty
+: 1784232404:0;rm -rf Graphite-gtk-theme
+: 1784232492:0;sudo emerge -av slurp grim
+: 1784232576:0;sudo emerge --ask --verbose --deep --update @world
+: 1784234643:0;sudo emerge --deep --ask --verbose --depclean
+: 1784234676:0;sudo eclean-pkg -D
+: 1784234679:0;sudo eclean-dist -D
+: 1784234755:0;EDITOR=nvim sudoedit /etc/portage/package.use/rofi-wayland
+: 1784234777:0;sudo emerge -av zenity
+: 1784235956:0;./color-picker.sh
+: 1784236056:0;mv Downloads/color-picker.sh .local/share/recently-used.xbel
+: 1784236060:0;cd .local/share
+: 1784236068:0;rm recently-used.xbel color-picker.sh
+: 1784236077:0;mkdir bin
+: 1784236103:0;chmod +x wl-color-picker.sh
+: 1784236105:0;mv wl-color-picker.sh color-picker.sh
+: 1784236109:0;mv color-picker.sh ../.local/share/bin
+: 1784236116:0;color-picker
+: 1784236393:0;mango --help
+: 1784236398:0;mango -v
+: 1784236400:0;mango -p
+: 1784236414:0;mango -s
+: 1784236417:0;mango -s sti
+: 1784236761:0;discord --ozone-platform=x11
+: 1784236769:0;discord --ozone-platform=xwayland
+: 1784236794:0;discord --enable-logging --v=1
+: 1784236912:0;discord --disable-gpu
+: 1784236924:0;discord --disable-gpu-sandbox
+: 1784236944:0;MESA_LOADER_DRIVER_OVERRIDE=radeonsi discord
+: 1784236982:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/xwayland-satellite
+: 1784236992:0;sudo emerge -av xwayland-satellite
+: 1784237652:0;discord --enable-logging --v=1 2>&1 | tee discord.log
+: 1784237678:0;sudo equery uses mango
+: 1784237686:0;sudo equery uses gui-apps/mango
+: 1784237691:0;sudo equery uses mangowm
+: 1784237783:0;sudo emerge -av mangowm
+: 1784237938:0;discord
+: 1784237974:0;nmcli d wifi connect Colossus ifname wlan1
+: 1784238126:0;sudo emerge -av discord
+: 1784238171:0;sudo emerge --ask --verbose --deep --update --changed-use @world
+: 1784238189:0;rm discord.log
+: 1784238259:0;sudo emerge --ask --deep --update --verbose @world
+: 1784238342:0;python copyparty-sfx.py
+: 1784238460:0;EDITOR=nvim sudoedit /etc/portage/package.use/discord
+: 1784238529:0;mv Full.png Red.png
+: 1784238538:0;cp -r Downloads/dotfiles/fastfetch .config
+: 1784238547:0;mv Downloads/Red.png .config/fastfetch
+: 1784238626:0;rm Endfield.png
+: 1784238678:0;nv
+: 1784238706:0;nvim .config/kitty/kitty.conf k
+: 1784242745:0;cler
+: 1784242829:0;cat .config/fastfetch/config.jsonc | wl-copy
+: 1784242951:0;cd .config/fastfetch
+: 1784242956:0;mv config.jsonc config.jsonc.bak
+: 1784243018:0;mv ../../Downloads/config.jsonc .
+: 1784243034:0;nvim config.jsonc.bak
+: 1784243193:0;nvim config.jsonc
+: 1784243212:0;rm config.jsonc.bak
+: 1784243234:0;cd .config/nvim/lua/lualine/themes
+: 1784243236:0;nvim wetar.lua
+: 1784243842:0;cp Downloads/dotfiles/zsh/themes/alanpeabody.zsh-theme .config/zsh/oh-my-zsh/themes/
+: 1784243846:0;vlrst
+: 1784244093:0;l
+: 1784244168:0;sudo emerge -av discord-bin
+: 1784244229:0;sudo emerge --sync && sudo emerge --ask --verbose --update --deep net-im/discord
+: 1784244705:0;lca
+: 1784245030:0;rm -rf .cache/awww
+: 1784245047:0;rm -rf .cache/walrandom
+: 1784245348:0;nvim .config/fastfetch/config.jsonc
+: 1784245358:0;qs
+: 1784245481:0;ping 8.8.8.8
+: 1784245597:0;fasstfetch
+: 1784245657:0;EDITOR=nvim sudoedit /etc/portage/package.use/mango
+: 1784245684:0;sudo emerge --sync && sudo emerge --ask --verbose --update --deep --newuse @world
+: 1784246289:0;sudo emerge --ask --deep --depclean --verbose
+: 1784246321:0;eza --colour
+: 1784246326:0;eza --colour never
+: 1784246414:0;export EZA_COLORS="di=19"
+: 1784246423:0;export EZA_COLORS="di=9"
+: 1784246428:0;export EZA_COLORS="di=28"
+: 1784246464:0;export EZA_COLORS="di=31"
+: 1784246493:0;export EZA_COLORS="di=01;31"
+: 1784246507:0;export EZA_COLORS="di=1;31"
+: 1784246544:0;nvim .config/zsh/.zshrc
+: 1784246745:0;php
+: 1784246756:0;sudo emerge -av dev-lang/php
+: 1784263422:0;php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+: 1784263444:0;php -r "if (hash_file('sha384', 'composer-setup.php') === 'c8b085408188070d5f52bcfe4ecfbee5f727afa458b2573b8eaaf77b3419b0bf2768dc67c86944da1544f06fa544fd47') { echo 'Installer verified'.PHP_EOL; } else { echo 'Installer corrupt'.PHP_EOL; unlink('composer-setup.php'); exit(1); }"
+: 1784263452:0;php composer-setup.php
+: 1784263475:0;php -r "unlink('composer-setup.php');"
+: 1784263481:0;cd Downloads/
+: 1784263496:0;sudo mv composer.phar /usr/local/bin/composer
+: 1784263501:0;composer
+: 1784263503:0;cdclear
+: 1784263506:0;nvim
+: 1784265620:0;nvim Downloads/dotfiles/nvim/lua/lualine/themes/wetar.lua
+: 1784265629:0;nvim .config/nvim/lua/lualine/themes/wetar.lua
+: 1784265691:0;nvim .config/nvim/lua/plugins/lspformatter.lua
+: 1784265734:0;nvim .config/nvim/lua/plugins/colorscheme.lua
+: 1784265804:0;cp -r quickshell ../../.config
+: 1784265808:0;qs -c .config/quickshell
+: 1784265815:0;qs -c $HOME/.config/quickshell
+: 1784265824:0;qs -c /home/wetar/.config/quickshell/wutbar
+: 1784265849:0;qs -c $HOME/.config/quickshell/wbar
+: 1784265851:0;qs -c $HOME/.config/quickshell/wutbar
+: 1784265857:0;rm -rf .config/quickshell
+: 1784265865:0;a
+: 1784266265:0;nvim .config/discord/settings.json
+: 1784266310:0;sudo equery list -p net-im/discord
+: 1784266340:0;sudo equery meta net-im/discord
+: 1784266466:0;which discord
+: 1784266469:0;/usr/bin/discord
+: 1784268923:0;delcache
+: 1784269085:0;claer
+: 1784269108:0;nvim .config/kitty/kitty.conf
+: 1784269268:0;grim "$(slurp)"
+: 1784269279:0;rm 0,0\ 1366x768
+: 1784269285:0;cd Pictures/cs
+: 1784269287:0;cd Pictures/Screenshots
+: 1784269299:0;grim "$(slurp)" Pictures/Screenshots/Rice.png
+: 1784269321:0;cd Pictures
+: 1784269322:0;cd Screenshots
+: 1784269332:0;sudo emerge -av cava
+: 1784269345:0;pactl
+: 1784269547:0;sudo emerge -av sys-auth/elogind media-video/pipewire media-video/wireplumber media-video/pulseaudio-utils
+: 1784269569:0;sudo emerge -av sys-auth/elogind media-video/pipewire media-video/wireplumber media-sound/pulseaudio-utils
+: 1784269804:0;EDITOR=nvim sudoedit /etc/portage/package.use/pipewire
+: 1784269814:0;sudo equery uses elogind
+: 1784269821:0;sudo equery uses pipewire
+: 1784269868:0;sudo rm -rf /etc/portage/package.use/pipewire
+: 1784269896:0;sudo emerge -av sys-auth/elogind media-video/pipewire media-video/wireplumber pipewire-pulse
+: 1784269970:0;EDITOR=nvim sudoedit /etc/portage/make.conf
+: 1784269976:0;sudo emerge --ask --deep --update --verbose --newuse @world
+: 1784275356:0;chmod +x .config/mango/scripts/sound-server.sh
+: 1784275369:0;sudo emerge -av libpulse
+: 1784275385:0;ear
+: 1784275429:0;nvim .config/mango/scripts/sound-server.sh
+: 1784275437:0;nvim .config/rofi/config.rasi
+: 1784275463:0;cd Downloads/dotfiles
+: 1784275468:0;cd switar
+: 1784275478:0;cd git
+: 1784275481:0;cat config
+: 1784275488:0;cd mpd
+: 1784275494:0;cd Pictures/Wallpapers
+: 1784275503:0;cd .git
+: 1784275517:0;cd 
+: 1784276390:0;cd ../
+: 1784276393:0;mkdir Compile
+: 1784276400:0;rm -rf dotfiles
+: 1784276412:0;mv copyparty-sfx.py copyparty.py
+: 1784276456:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/wf-recorder
+: 1784276508:0;sudo etc-update
+: 1784276515:0;EDITOR=nvim sudoedit /etc/portage/package.use/zenity
+: 1784276523:0;EDITOR=nvim sudoedit /etc/portage/package.use/wf-recorder
+: 1784276530:0;sudo emerge -av wf-recorder
+: 1784277022:0;sudo equery uses discord
+: 1784277045:0;sudo equery uses discord-canary
+: 1784277116:0;EDITOR=nvim sudoedit /etc/portage/package.license
+: 1784277140:0;EDITOR=nvim sudoedit /etc/portage/package.accept_keywords/discord-canary-bin
+: 1784277160:0;sudo emerge -av --unmerge discord
+: 1784277175:0;rm -rf .config/discord
+: 1784277203:0;sudo emerge -av discord-canary-bin
+: 1784277332:0;sudo discord-canary
+: 1784277385:0;ls -l /opt/discord-canary/chrome_crashpad_handler
+: 1784277397:0;sudo chmod +x /opt/discord-canary/chrome_crashpad_handler
+: 1784277423:0;nvim .config/discordcanary/settings.json
+: 1784277435:0;discord-canary
+: 1784279848:0;flear
+: 1784280753:0;date
+: 1784280764:0;nmcli d wifi
+: 1784280773:0;clewar
+: 1784280871:0;c
+: 1784280871:0;dclear
+: 1784281066:0;nvim .local/share/bin/color-picker.sh
+: 1784281171:0;color-picker.sh
+: 1784281176:0;mmsg -g -c
+: 1784281179:0;mmsg 
+: 1784281182:0;mmsg get 
+: 1784281189:0;mmsg --help
+: 1784281792:0;zenity --color-selection
+: 1784281804:0;wf-recorder --help
+: 1784281809:0;cd Downloads
+: 1784281823:0;git clone https://github.com/insertmyself/dotfiles.git
+: 1784281936:0;cd dotfiles
+: 1784281941:0;cd niri/
+: 1784281942:0;nvim config.kdl
+: 1784292581:0;pactl info
+: 1784293122:0;sudo reboot
+: 1784293636:0;nvim .config/mango/config.conf
+: 1784293990:0;nvim .config/cava
+: 1784294008:0;clar
+: 1784294074:0;pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo 100%
+: 1784294104:0;cava
+: 1784294472:0;nvim .config/mango/scripts/wallpaper.sh
+: 1784294617:0;grim -g "$(slurp)" Pictures/Screenshots/Rice.png
+: 1784295083:0;rm -rf .pki
+: 1784295121:0;fastfetch
+: 1784295240:0;cd Compile
+: 1784295241:0;cd
+: 1784295242:0;clear
+: 1784295242:0;la
+: 1784295243:0;ls
+: 1784295251:0;nvim .config/zsh/oh-my-zsh/themes/alanpeabody.zsh-theme
+: 1784295263:0;exit
+: 1784295266:0;la
+: 1784295267:0;clear
+: 1784295268:0;cd Downloads
+: 1784295268:0;ls
+: 1784295269:0;cd
+: 1784295269:0;clear
+: 1784295270:0;la
+: 1784295270:0;clear
+: 1784295711:0;lsb-release
+: 1784295713:0;clear
+: 1784295716:0;cat /etc/os-release
+: 1784295719:0;ls
+: 1784295720:0;clear
+: 1784296922:0;ls
+: 1784296923:0;clear
+: 1784296924:0;su
+clear
+ls
+clear
+cd /usr/src/linux
+ls
+cd ../
+la
+clear
+ls
+sudo eselect 
+sudo eselect kernel
+sudo eselect kernel list
+sudo eselect kernel set 1
+sudo eselect kernel list
+clear
+cd linux
+ls
+cd ../
+ls -lh
+cd linux
+ls
+clear
+la
+ls
+clear
+make localmodconfig
+clear
+make menuconfig
+clear
+make -j4
+clear
+make modules_install
+clear
+make install
+clear
+sudo reboot
+: 1784300671:0;la
+: 1784300672:0;clear
+: 1784300672:0;la
+: 1784300673:0;clear
+: 1784300673:0;la
+: 1784300674:0;clear
+: 1784300675:0;cd Downloads
+: 1784300675:0;ls
+: 1784300677:0;cd dotfiles
+: 1784300678:0;ls
+: 1784300679:0;cd ../
+: 1784300679:0;clear
+: 1784300680:0;la
+: 1784300681:0;rm -rf dotfiles
+: 1784300684:0;ls
+: 1784300685:0;cd
+: 1784300685:0;clear
+: 1784300689:0;mkdir Documents
+: 1784300693:0;mv Downloads/copyparty.py Documents
+: 1784300694:0;clear
+: 1784300795:0;fastfetch
+: 1784300896:0;clear
+: 1784300896:0;la
+: 1784300897:0;clear
+: 1784300898:0;fastfetch
+: 1784300902:0;clear
+: 1784300903:0;la
+: 1784300903:0;clear
+: 1784300904:0;la
+: 1784300904:0;clear
+: 1784300908:0;uname -r
+: 1784300909:0;ls
+: 1784300910:0;clear
+: 1784300984:0;l
+: 1784300984:0;ls
+: 1784300985:0;clear
+: 1784300985:0;la
+: 1784300986:0;clear
+: 1784300986:0;la
+: 1784300987:0;clear
+: 1784300988:0;cd Downloads
+: 1784300988:0;la
+: 1784300989:0;clear
+: 1784300989:0;cd
+: 1784300990:0;clear
+: 1784300990:0;la
+: 1784300993:0;mkdir Compile/dotfiles
+: 1784301046:0;cp -r .config/fastfetch Documents
+: 1784301052:0;mkdir Coding
+: 1784301058:0;mv Compile/dotfiles Coding
+: 1784301066:0;mv Documents/fastfetch Coding/dotfiles
+: 1784301068:0;cd Coding/dotfiles
+: 1784301069:0;clear
+: 1784301069:0;la
+: 1784301071:0;cd
+: 1784301092:0;cp -r .config/{zsh,cava} Coding/dotfiles
