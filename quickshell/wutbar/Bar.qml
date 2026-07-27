@@ -53,7 +53,7 @@ PanelWindow {
             Rectangle {
                 id: workspacesWidget
                 Layout.alignment: Qt.AlignHCenter
-                Layout.preferredWidth: workspacesWidgetContent.implicitWidth + 18
+                Layout.preferredWidth: workspacesWidgetContent.implicitWidth + 22
                 Layout.preferredHeight: workspacesWidgetContent.implicitHeight + 28
                 color: "#353535"
 
@@ -67,8 +67,8 @@ PanelWindow {
                         delegate: Rectangle {
                             required property var modelData
 
-                            width: 20
-                            height: modelData.active ? 50 : 20
+                            width: 16
+                            height: modelData.active ? 60 : 30
                             color: modelData.active ? "#cfc38d" : "#151515"
 
                             Behavior on height {
@@ -128,6 +128,11 @@ PanelWindow {
                 HoverHandler {
                     id: powerWidgetHoverHandler
                     cursorShape: Qt.PointingHandCursor
+                }
+
+                TapHandler {
+                    id: powerWidgetTapHandler
+                    onTapped: {}
                 }
 
                 Text {
