@@ -1,4 +1,5 @@
 import Quickshell
+import Quickshell.WindowManager
 import QtQuick.Layouts
 import QtQuick
 import "."
@@ -30,7 +31,7 @@ PanelWindow {
                 Layout.topMargin: 8
                 Layout.preferredWidth: musicWidgetText.implicitHeight + 16
                 Layout.preferredHeight: musicWidgetText.implicitWidth + 28
-                color: "#353535"
+                color: "#404040"
 
                 Text {
                     id: musicWidgetText
@@ -39,7 +40,7 @@ PanelWindow {
                     color: "#cfc38d"
                     font.weight: 900
                     font.family: "JetBrainsMono Nerd Font"
-                    font.pixelSize: 18
+                    font.pixelSize: 16
                     transformOrigin: Item.Center
                     rotation: -90
                 }
@@ -47,6 +48,38 @@ PanelWindow {
 
             Item {
                 Layout.fillHeight: true
+            }
+
+            Rectangle {
+                id: workspacesWidget
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredWidth: workspacesWidgetContent.implicitWidth + 18
+                Layout.preferredHeight: workspacesWidgetContent.implicitHeight + 28
+                color: "#353535"
+
+                Column {
+                    id: workspacesWidgetContent
+                    anchors.centerIn: parent
+                    spacing: 4
+
+                    Repeater {
+                        model: WindowManager.windowsets.slice(0, 4)
+                        delegate: Rectangle {
+                            required property var modelData
+
+                            width: 20
+                            height: modelData.active ? 50 : 20
+                            color: modelData.active ? "#cfc38d" : "#151515"
+
+                            Behavior on height {
+                                NumberAnimation {
+                                    duration: 180
+                                    easing.type: Easing.InOutCubic
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             Rectangle {
@@ -65,7 +98,7 @@ PanelWindow {
                         color: "#cfc38d"
                         font.weight: 900
                         font.family: "JetBrainsMono Nerd Font"
-                        font.pixelSize: 23
+                        font.pixelSize: 22
                     }
 
                     Text {
@@ -73,7 +106,7 @@ PanelWindow {
                         color: "#cfc38d"
                         font.weight: 900
                         font.family: "JetBrainsMono Nerd Font"
-                        font.pixelSize: 23
+                        font.pixelSize: 22
                     }
                 }
             }
@@ -104,7 +137,7 @@ PanelWindow {
                     color: "#cfc38d"
                     font.weight: 900
                     font.family: "JetBrainsMono Nerd Font"
-                    font.pixelSize: 18
+                    font.pixelSize: 16
                 }
             }
         }

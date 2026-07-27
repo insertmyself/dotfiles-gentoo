@@ -16,7 +16,7 @@ Scope {
             onRead: data => {
                 const parts = data.trim().split("|");
 
-                Shared.titleText = parts[0] || "No Artist";
+                Shared.titleText = parts[0] || "No Song";
                 Shared.artistText = parts[1] || "No Artist";
             }
         }
